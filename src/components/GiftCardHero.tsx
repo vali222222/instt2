@@ -4,7 +4,7 @@ import ReviewsSection from "@/components/ReviewsSection";
 
 const GiftCardHero = () => {
   const steps = [
-    "Click The Button Above 👆 ",
+    "Click A Button Above 👆 ",
     "Enter Your Email & Basic Info",
     "Complete Recommended Deals",
     "Claim Your Gift Card!"
