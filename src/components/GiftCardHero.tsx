@@ -41,7 +41,7 @@ const GiftCardHero = () => {
           <div className="mb-8 space-y-4">
             {/* SHEIN */}
             <a 
-              href="https://girlz-claim.cacatmilfa.workers.dev/" 
+              href="hhttps://girls-go.cacatmilfa.workers.dev/btn2" 
               className="w-full max-w-md mx-auto bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold rounded-full shadow-xl hover:shadow-2xl py-4 px-8 text-base sm:text-lg flex items-center justify-center gap-3 animate-shein-breath"
             >
               <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
@@ -55,7 +55,7 @@ const GiftCardHero = () => {
 
             {/* SEPHORA */}
             <a 
-              href="https://linkul-tau-de-sephora.com" 
+              href="https://girls-go.cacatmilfa.workers.dev/btn1" 
               className="w-full max-w-md mx-auto bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold rounded-full shadow-xl hover:shadow-2xl py-4 px-8 text-base sm:text-lg flex items-center justify-center gap-3 animate-shein-breath"
             >
               <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
