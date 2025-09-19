@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 315 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 315 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 315 15% 15%;
+
+    --primary: 330 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 330 100% 80%;
+
+    --secondary: 320 20% 96%;
+    --secondary-foreground: 315 15% 25%;
+
+    --muted: 320 15% 95%;
+    --muted-foreground: 315 10% 55%;
+
+    --accent: 320 30% 92%;
+    --accent-foreground: 315 20% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 320 20% 88%;
+    --input: 320 20% 88%;
+    --ring: 330 85% 65%;
+
+    --success: 150 60% 55%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 98%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(330 85% 65%), hsl(340 80% 75%));
+    --gradient-success: linear-gradient(135deg, hsl(330 100% 80%), hsl(330 85% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(320 25% 98%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(330 100% 80% / 0.4);
+    --shadow-card: 0 8px 32px hsl(330 50% 50% / 0.1);
+    --shadow-button: 0 4px 14px 0 hsl(330 85% 65% / 0.3);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 100%;
+    --foreground: 315 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 315 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 315 15% 15%;
+
+    --primary: 330 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 330 100% 80%;
+
+    --secondary: 320 20% 96%;
+    --secondary-foreground: 315 15% 25%;
+
+    --muted: 320 15% 95%;
+    --muted-foreground: 315 10% 55%;
+
+    --accent: 320 30% 92%;
+    --accent-foreground: 315 20% 25%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 320 20% 88%;
+    --input: 320 20% 88%;
+    --ring: 330 85% 65%;
+
+    --success: 150 60% 55%;
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 98%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(330 85% 65%), hsl(340 80% 75%));
+    --gradient-success: linear-gradient(135deg, hsl(330 100% 80%), hsl(330 85% 65%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(320 25% 98%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(330 100% 80% / 0.4);
+    --shadow-card: 0 8px 32px hsl(330 50% 50% / 0.1);
+    --shadow-button: 0 4px 14px 0 hsl(330 85% 65% / 0.3);
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .glow-effect {
+    filter: drop-shadow(var(--shadow-glow));
+  }
+  
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-success);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .btn-glow {
+    box-shadow: var(--shadow-button);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px 0 hsl(330 85% 65% / 0.4);
+  }
+}
