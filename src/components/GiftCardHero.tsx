@@ -1,4 +1,4 @@
-import { Heart, ChevronDown, Mail, User, CreditCard, Gift, Sparkles, DollarSign } from "lucide-react";
+import { Sparkles, DollarSign } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import ReviewsSection from "@/components/ReviewsSection";
 
@@ -15,8 +15,11 @@ const GiftCardHero = () => {
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/10"></div>
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary-glow/10 rounded-full blur-3xl animate-float" style={{animationDelay: "1.5s"}}></div>
-      
+      <div
+        className="absolute bottom-20 right-10 w-96 h-96 bg-primary-glow/10 rounded-full blur-3xl animate-float"
+        style={{ animationDelay: "1.5s" }}
+      ></div>
+
       <div className="relative z-10 container mx-auto px-4 py-8 max-w-4xl">
         {/* Header */}
         <div className="text-center mb-8 animate-fade-in">
@@ -28,11 +31,11 @@ const GiftCardHero = () => {
               <Sparkles className="w-6 h-6 text-primary-glow absolute -top-1 -right-1 animate-float" />
             </div>
           </div>
-          
+
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gradient leading-tight">
             Claim Your Gift Card Now!
           </h1>
-          
+
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 leading-tight">
             Higher value deals = faster rewards!
           </p>
@@ -40,11 +43,11 @@ const GiftCardHero = () => {
           {/* CTA Buttons */}
           <div className="mb-8 space-y-4">
             {/* SHEIN */}
-            <a 
-              href="https://girls-go.cacatmilfa.workers.dev/btn2" 
+            <a
+              href="https://girls-go.cacatmilfa.workers.dev/btn2"
               className="w-full max-w-md mx-auto bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold rounded-full shadow-xl hover:shadow-2xl py-4 px-8 text-base sm:text-lg flex items-center justify-center gap-3 animate-shein-breath"
             >
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow">
                 <span className="text-black font-bold text-sm">S</span>
               </div>
               <div className="text-left">
@@ -54,15 +57,15 @@ const GiftCardHero = () => {
             </a>
 
             {/* SEPHORA */}
-            <a 
-              href="https://girls-go.cacatmilfa.workers.dev/btn1" 
+            <a
+              href="https://girls-go.cacatmilfa.workers.dev/btn1"
               className="w-full max-w-md mx-auto bg-gradient-to-r from-pink-400 to-pink-500 hover:from-pink-500 hover:to-pink-600 text-white font-bold rounded-full shadow-xl hover:shadow-2xl py-4 px-8 text-base sm:text-lg flex items-center justify-center gap-3 animate-shein-breath"
             >
-              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden shadow">
-                <img 
-                  src="https://logosmarken.com/wp-content/uploads/2022/02/Sephora-Emblem.png" 
-                  alt="Sephora Logo" 
-                  className="w-11 h-11 object-contain"
+              <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center overflow-hidden shadow">
+                <img
+                  src="/sephora-logo.png"
+                  alt="Sephora Logo"
+                  className="w-8 h-8 object-contain"
                 />
               </div>
               <div className="text-left">
@@ -77,15 +80,15 @@ const GiftCardHero = () => {
         <Card className="gradient-card card-shadow p-6 md:p-8 mb-8 animate-slide-up border border-primary/20">
           <div className="grid gap-4 md:gap-6">
             {steps.map((step, index) => (
-              <div 
+              <div
                 key={index}
                 className="flex items-center gap-4 md:gap-6 p-4 md:p-6 rounded-xl bg-white/50 hover:bg-white/70 transition-all duration-300 border border-primary/10 hover:border-primary/20 shadow-sm hover:shadow-md"
-                style={{animationDelay: `${index * 0.2}s`}}
+                style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full gradient-primary flex items-center justify-center font-bold text-lg md:text-xl text-primary-foreground shadow-lg">
                   {index + 1}
                 </div>
-                
+
                 <div className="flex-1">
                   <h3 className="text-base md:text-lg lg:text-xl font-semibold text-foreground">
                     {step}
