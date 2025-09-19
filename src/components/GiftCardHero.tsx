@@ -60,7 +60,7 @@ const GiftCardHero = () => {
             >
               <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://i.pinimg.com/originals/59/88/ed/5988ed9531e7e4322993de62a1b98d05.png" 
+                  src="https://logosmarken.com/wp-content/uploads/2022/02/Sephora-Emblem.png" 
                   alt="Sephora Logo" 
                   className="w-6 h-6 object-contain"
                 />
