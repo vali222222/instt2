@@ -5,6 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: './', // 👈 adaugă asta ca să rezolve pagina albă pe Netlify/GitHub Pages
   server: {
     host: "::",
     port: 8080,
@@ -16,6 +17,6 @@ export default defineConfig(({ mode }) => ({
     },
   },
   build: {
-    outDir: "dist",   // <- adaugat, foarte important pentru Cloudflare
+    outDir: "dist",   // <- rămâne cum ai acum
   },
 }));
