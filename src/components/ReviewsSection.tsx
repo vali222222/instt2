@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Hand } from "lucide-react";
 import {
@@ -14,17 +13,27 @@ const ReviewsSection = () => {
     {
       id: 1,
       image: "/public/review1.webp",
-      alt: "SHEIN Gift Card Success Story - Tanja"
-    },
-    {
-      id: 2,
-      image: "/public/review1.webp",
-      alt: "SHEIN Package Delivery Success"
+      alt: ""
     },
     {
       id: 3,
-      image: "/lovable-uploads/review2.webp",
-      alt: "Happy Customer with SHEIN Rewards"
+      image: "/public/review3.webp",
+      alt: ""
+    },
+    {
+      id: 4,
+      image: "/public/review4.webp",
+      alt: ""
+    },
+    {
+      id: 5,
+      image: "/public/review5.webp",
+      alt: ""
+    },
+    {
+      id: 2,
+      image: "/public/review2.webp",
+      alt: ""
     }
   ];
 
