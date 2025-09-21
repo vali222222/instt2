@@ -13,12 +13,12 @@ const ReviewsSection = () => {
   const reviews = [
     {
       id: 1,
-      image: "/lovable-uploads/review1.webp",
+      image: "/public/review1.webp",
       alt: "SHEIN Gift Card Success Story - Tanja"
     },
     {
       id: 2,
-      image: "/lovable-uploads/review3.webp",
+      image: "/public/review1.webp",
       alt: "SHEIN Package Delivery Success"
     },
     {
