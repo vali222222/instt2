@@ -10,11 +10,11 @@ import {
 
 const ReviewsSection = () => {
   const reviews = [
-    { id: 1, image: "/review1.webp", alt: "SHEIN Gift Card Success Story" },
-    { id: 3, image: "/review3.webp", alt: "SHEIN $750 Gift Card Success" },
-    { id: 4, image: "/review4.webp", alt: "SHEIN Gift Card Delivery Proof" },
-    { id: 5, image: "/review5.webp", alt: "SHEIN Call to Action - Share Your Claims" },
-    { id: 2, image: "/review2.webp", alt: "SHEIN Package Delivery Success" }, // mutat la final
+    { id: 1, image: "/review1.webp", alt: "Review 1" },
+    { id: 3, image: "/review3.webp", alt: "Review 3" },
+    { id: 4, image: "/review4.webp", alt: "Review 4" },
+    { id: 5, image: "/review5.webp", alt: "Review 5" },
+    { id: 2, image: "/review2.webp", alt: "Review 2" }, // mutat la final
   ];
 
   return (
@@ -28,14 +28,16 @@ const ReviewsSection = () => {
           <p className="text-sm md:text-base text-muted-foreground mb-4">
             Real results from real people! 💕
           </p>
-          
+
           {/* Swipe Animation Indicator */}
           <div className="flex items-center justify-center gap-3 text-pink-400">
             <div className="relative">
               <Hand className="w-5 h-5 animate-pulse" />
               <div className="absolute -right-8 top-1/2 transform -translate-y-1/2 w-6 h-0.5 bg-pink-400 animate-slide-left"></div>
             </div>
-            <span className="text-xs font-medium animate-pulse">Swipe to see more</span>
+            <span className="text-xs font-medium animate-pulse">
+              Swipe to see more
+            </span>
           </div>
         </div>
 
@@ -68,17 +70,4 @@ const ReviewsSection = () => {
           </div>
         </Carousel>
 
-        {/* Mobile Navigation Dots */}
-        <div className="flex justify-center mt-6 sm:hidden">
-          <div className="flex gap-2">
-            {reviews.map((_, index) => (
-              <div key={index} className="w-2 h-2 rounded-full bg-pink-300/50" />
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default ReviewsSection;
+        {/* Mobile Naviga*
