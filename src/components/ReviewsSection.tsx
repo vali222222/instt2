@@ -16,11 +16,6 @@ const ReviewsSection = () => {
       alt: "SHEIN Gift Card Success Story - Tanja"
     },
     {
-      id: 2,
-      image: "/lovable-uploads/28413097-4b1a-493b-bba7-ced5188f72dd.png",
-      alt: "SHEIN Package Delivery Success"
-    },
-    {
       id: 3,
       image: "/lovable-uploads/716d4719-e019-4180-bee9-e1b6dc23aff8.png",
       alt: "Sephora $750 Gift Card Success"
@@ -34,6 +29,11 @@ const ReviewsSection = () => {
       id: 5,
       image: "/lovable-uploads/52d14925-d684-49b3-8617-8ba20f8286ef.png",
       alt: "Call to Action - Share Your Claims"
+    },
+    {
+      id: 2,
+      image: "/lovable-uploads/28413097-4b1a-493b-bba7-ced5188f72dd.png",
+      alt: "SHEIN Package Delivery Success"
     }
   ];
 
